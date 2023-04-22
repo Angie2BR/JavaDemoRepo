@@ -1,0 +1,34 @@
+--Anatomy of JDK:
+--Java Development Kit
+    --consists of all the tools necessary to write, run, and debug Java
+
+    --Development tools: used to compile java code
+    --JRE
+        --Java Runtime environment
+        --all that's necessary to RUN a java program
+        --Contains the JVM and standard library
+        --JVM
+            --Java Virtual Machine
+            --JIT compiler
+                --'Just in Time'
+                --Feeds instructions to the machine
+
+--Stack vs Heap
+    --Stack(call stack specifically)
+        --first in, last out
+        --constists of 'stack frames' 
+            --where we are in a program(what function/method)
+            --what local variables exist here
+    --Heap
+        --large less structured set of continuous memory
+        --Stores Objects themselves
+
+--Garbage collection/Memory management
+    --Runs periodically
+    --checks the heap for objects that have no references and deletes them
+    --if we have no reference for an object, there is no way for us to use it 
+    --As developers, We have NO WAY to control the GC
+        --we can request the GC to run
+        --we can define methods to run when objects are collected***
+
+    ***: This doesn't mean that we should
